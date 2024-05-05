@@ -1,10 +1,10 @@
 {
   "domain": "assignment-fsd-backend-production.up.railway.app",
-  "signup": "http://{{domain}}/signup",
-  "login": "http://{{domain}}/login",
-  "dashboard": "http://{{domain}}/dashboard",
-  "signout": "http://{{domain}}/signout",
-  "qrImage": "http://{{domain}}/qrImage",
-  "TFA": "http://{{domain}}/TFA",
-  "socket": "http://{{domain}}"
+  "signup": "https://{{domain}}/signup",
+  "login": "https://{{domain}}/login",
+  "dashboard": "https://{{domain}}/dashboard",
+  "signout": "https://{{domain}}/signout",
+  "qrImage": "https://{{domain}}/qrImage",
+  "TFA": "https://{{domain}}/TFA",
+  "socket": "https://{{domain}}"
 }
