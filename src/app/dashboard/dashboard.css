@@ -1,0 +1,123 @@
+#dashboard{
+    width: 100vw;
+        height: 100vh;
+        background: #181819;
+        color: rgb(218, 218, 228);
+        overflow: hidden;
+    font-family: "Montserrat";
+}
+#dashboard > div{
+    width: 60%;
+    position: relative;
+        top: 0%;
+        left: 20%;
+display: grid;
+    grid-template-rows: 1fr 3.5fr;
+    height: 100%;
+}
+.heading > h4{
+    font-weight: 400;
+    text-align: center;
+    padding: 0 10px;
+        margin: 10px;
+}
+#devices{
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+display: flex;
+scroll-behavior: smooth;
+scrollbar-width: 1px;
+justify-content: space-around;
+flex-wrap: wrap;
+    }
+.device{
+    background: rgb(139, 138, 148);
+        height: 10em;
+    margin: 50px 0;
+    width: 23em;
+    box-shadow: rgba(0, 0, 0, 0.292) 0px 20px 30px;
+    display: grid;
+        grid-template-rows: 1.3fr 2fr;
+    position: relative;
+    color: black;
+    padding: 0 10px;
+}
+.device > header{
+    display: flex;
+justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    font-size: 14px;
+        font-weight: 600;
+    margin: 5px 0;
+    padding-right: 10px;
+}
+.device>header>div>div{
+    margin: 4px 0;
+}
+.device>main{
+    font-size: 0.9em;
+    align-items: start;
+}
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.device>main > div{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        height: 70%;
+}
+/* CSS */
+.button-6 {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 2rem;
+    padding: calc(0.1em - 1px) calc(1em - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+    transform: translateY(-1px);
+}
+
+.button-6:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}

@@ -1,0 +1,9 @@
+{
+  "signup":"http://localhost:3001/signup",
+  "login":"http://localhost:3001/login",
+  "dashboard":"http://localhost:3001/dashboard",
+  "signout":"http://localhost:3001/signout",
+  "qrImage":"http://localhost:3001/qrImage",
+  "TFA":"http://localhost:3001/TFA",
+  "socket":"http://localhost:3001"
+}

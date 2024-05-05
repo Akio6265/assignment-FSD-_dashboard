@@ -1,0 +1,14 @@
+// {
+//   "extends": "next/core-web-vitals",
+//   "rules": {
+//     "indent": ["error", 2],
+//     "quotes": ["error", "single"],
+//     "no-var": "error",
+//     "no-unused-vars": "error",
+//     "arrow-parens": ["error", "always"],
+//     "object-shorthand": ["error", "always"],
+//     "no-console": "warn",
+//     "keyword-spacing": "error",
+//     "comma-dangle": ["error", "always-multiline"]
+//   }
+// }
