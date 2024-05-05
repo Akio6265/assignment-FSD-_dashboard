@@ -1,10 +1,9 @@
 {
-  "domain": "assignment-fsd-backend-production.up.railway.app",
-  "signup": "https://{{domain}}/signup",
-  "login": "https://{{domain}}/login",
-  "dashboard": "https://{{domain}}/dashboard",
-  "signout": "https://{{domain}}/signout",
-  "qrImage": "https://{{domain}}/qrImage",
-  "TFA": "https://{{domain}}/TFA",
-  "socket": "https://{{domain}}"
+  "signup": "https://assignment-fsd-backend-production.up.railway.app/signup",
+  "login": "https://assignment-fsd-backend-production.up.railway.app/login",
+  "dashboard": "https://assignment-fsd-backend-production.up.railway.app/dashboard",
+  "signout": "https://assignment-fsd-backend-production.up.railway.app/signout",
+  "qrImage": "https://assignment-fsd-backend-production.up.railway.app/qrImage",
+  "TFA": "https://assignment-fsd-backend-production.up.railway.app/TFA",
+  "socket": "https://assignment-fsd-backend-production.up.railway.app"
 }
