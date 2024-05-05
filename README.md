@@ -10,14 +10,14 @@ This is a project given as an assignment, its the frontend part of the assignmen
 
 This will display the main content, starting with the "/" its just a basic "go to login page" buttton. On "/login" user can login and signup both on the same page by changing the form. 
 ## Signup
-Once signup, user will be retirected to "/2fa" to scan the qr code and get the authentication code using any authentication app. User must enter the code to continue.
+Once signup, user will be redirected to "/2fa" to scan the qr code and get the authentication code using any authentication app. User must enter the code to continue.
 ## Login
 To login user will have to enter the username and password and the 2FA code
 
 ## Dashboard
 After a successful login or signup user will come to "/dashboard", this page uses an api to get the user logs and display them. It will contain the current device and all the other devices that are currently login or were active on other devices, with the timestamp of last login.
 This page also gives access to the current user to log out from the other devices.
-Since this page is live, anytime someoen will login or logout. It will be updated on this page in real time.
+Since this page is real-time, anytime someone will login or logout. It will be updated on this page in real time.
 
 
 
