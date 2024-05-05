@@ -1,5 +1,5 @@
 {
-  "domain": "18.142.128.26",
+  "domain": "assignment-fsd-backend-production.up.railway.app",
   "signup": "http://{{domain}}/signup",
   "login": "http://{{domain}}/login",
   "dashboard": "http://{{domain}}/dashboard",
