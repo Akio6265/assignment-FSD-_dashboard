@@ -1,26 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Dashboard frontend
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This is a project given as an assignment, its just the frontend part of the assignment.
 
 
+
+
+# Docs
+
+This will display the main content, starting with the "/" its just a basic "go to login page" buttton. On "/login" user can login and signup both on the same page by changing the form. 
+## Signup
+Once signup, user will be retirected to "/2fa" to scan the qr code and get the authentication code using any authentication app. User must enter the code to continue.
+## Login
+To login user will have to ented the username and password and the 2FA code
+
+## Dashboard
+After a successful login or signup user will come to "/dashboard", this page uses an api to get the user logs and display them. It will contain the current device and all the other devices that are currently login or were active on other devices, with the timestamp of last login.
+This page also gives access to the current user to log out from the other devices.
+Since this page is live, anytime someoen will login or logout. It will be updated on this page in real time.
+
+# Apis used
+
+# login
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Username` | `string` | **Required** |
+| `Password` | `string` | **Required** |
+
+# signup
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `Username` | `string` | **Required** |
+| `Password` | `string` | **Required** |
+| `2FA` | `number` | **Required** |
+
+# qrImage
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| null | null | This will return a qr code image for authentication |
+
+# dashboard
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| null | null | This will return all the logs of the current user |
+
+# signout
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `log` | `string` | **Required** log will be the data of the device to be signout, This log is included by script on its own |
+
+## Directory
+
+ ```
+ root
  |
  |--.next
  |--node_modules
@@ -55,19 +87,30 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
  |-package-lock.json
  |-package.json
  |Readme.md
- |-tsconfig.json```
+ |-tsconfig.json
+## API Reference
 
-## Learn More
+#### Get all items
 
-To learn more about Next.js, take a look at the following resources:
+```http
+  GET /api/items
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Get item
 
-## Deploy on Vercel
+```http
+  GET /api/items/${id}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to fetch |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### add(num1, num2)
+
+Takes two numbers and returns the sum.
+
