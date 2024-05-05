@@ -12,12 +12,12 @@ This will display the main content, starting with the "/" its just a basic "go t
 ## Signup
 Once signup, user will be retirected to "/2fa" to scan the qr code and get the authentication code using any authentication app. User must enter the code to continue.
 ## Login
-To login user will have to ented the username and password and the 2FA code
+To login user will have to enter the username and password and the 2FA code
 
 ## Dashboard
 After a successful login or signup user will come to "/dashboard", this page uses an api to get the user logs and display them. It will contain the current device and all the other devices that are currently login or were active on other devices, with the timestamp of last login.
 This page also gives access to the current user to log out from the other devices.
-Since this page is live, anytime someoen will login or logout. It will be updated on this page in real time.
+Since this page is live, anytime someone will login or logout. It will be updated on this page in real time.
 
 # Apis used
 
@@ -88,29 +88,3 @@ Since this page is live, anytime someoen will login or logout. It will be update
  |-package.json
  |Readme.md
  |-tsconfig.json
-## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
