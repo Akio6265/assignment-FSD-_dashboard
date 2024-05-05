@@ -1,9 +1,10 @@
 {
-  "signup":"http://localhost:3001/signup",
-  "login":"http://localhost:3001/login",
-  "dashboard":"http://localhost:3001/dashboard",
-  "signout":"http://localhost:3001/signout",
-  "qrImage":"http://localhost:3001/qrImage",
-  "TFA":"http://localhost:3001/TFA",
-  "socket":"http://localhost:3001"
+  "domain": "18.142.128.26",
+  "signup": "http://{{domain}}/signup",
+  "login": "http://{{domain}}/login",
+  "dashboard": "http://{{domain}}/dashboard",
+  "signout": "http://{{domain}}/signout",
+  "qrImage": "http://{{domain}}/qrImage",
+  "TFA": "http://{{domain}}/TFA",
+  "socket": "http://{{domain}}"
 }
