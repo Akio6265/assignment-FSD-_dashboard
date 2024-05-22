@@ -48,7 +48,7 @@ main>header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40vw;
+    width: 100%;
 }
 
 main>header>div {
@@ -94,12 +94,13 @@ main>header>div:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+        width: 50%;
 }
 
 #login-stuff>form>input,
 #signup-stuff>form>input {
     all: unset;
-    width: 17vw;
+    width: 90%;
     height: 2.5em;
     background: white;
     margin: 4px 0;
@@ -147,7 +148,7 @@ main>header>div:hover {
     background: #fff;
     user-select: none;
     -webkit-user-select: none;
-    width: 15vw;
+    width: 90%;
     margin-top: 6px;
     height: 3em;
 
@@ -199,4 +200,14 @@ main>header>div:hover {
     transform: translateX(-50%) translateY(-100%);
     opacity: 1;
     transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+@media only screen and (max-width:700px) {
+    body>main{
+        width: 80vw;
+    }
+}
+@media only screen and (max-height:580px){
+    body>main {
+            height: 80vh;
+        }
 }
